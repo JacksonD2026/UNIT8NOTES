@@ -5,7 +5,7 @@ public class Main {
       // Declare 2D arrays [[]]
 
       int[][] coordinates;
-      String[][] seatingChart;
+    
       // Create 2D array of a certain nmuber
       // of ROWS and COLUMNS
       coordinates = new int[5][5];
@@ -25,7 +25,18 @@ public class Main {
       seatingChart[2][3] = "Zoie";
       seatingChart[0][0] = "Alex";
       seatingChart[0][3] = "Maia";
-   
+
+      // Initializer list
+      // alternate way to initialize array
+      // when you know which values go where
+
+      int [][] minefield = {{7, -20, 0}, {0, 50, -15}, {-10, 12, 20}};
+
+      // ACCESS a value with a double index operator
+      // array[row][col]
+      System.out.println("You earned " + minefield[1][1] + " points");
+
+      int worstSpot = minefield [0][1];
 
       
 
